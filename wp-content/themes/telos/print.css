@@ -1,0 +1,241 @@
+/* Print Style Sheet Defaults */
+
+* {
+	background: transparent !important;
+	color: black !important;
+	text-shadow: none !important;
+	filter:none !important;
+	-ms-filter: none !important;
+	box-shadow: none !important;
+	font-family: 'Proxima N W15 Reg', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+.print-only {
+	display: block !important;
+}
+body, #content, #container, .container, .entry-inner {
+	width: 100%;
+	margin: 0;
+	float: none;
+	background: #fff url(none) !important;
+	font-size: 10pt;
+	color: #000; 
+}
+h1,h2,h3,h4,h5,h6, 
+.single-post .entry-title, 
+.single-case_study .entry-title, 
+.single .entry-header, 
+.single .entry-meta {
+	font-family: 'Proxima N W15 Bold', Helvetica, Arial, sans-serif;
+	color: #000 !important;
+}
+h1 { font-size: 250%; }
+h2 { font-size: 175%; }
+h3 { font-size: 135%; }
+h4 { font-size: 100%; font-variant: small-caps; }
+h5 { font-size: 100%; }
+h6 { font-size: 90%; font-style: italic; }
+p, h2, h3 { orphans: 3; widows: 3; }
+p {	font-family: 'Proxima N W15 Reg', Helvetica, Arial, sans-serif !important; }
+strong { font-family: 'Proxima N W15 Bold', Helvetica, Arial, sans-serif; }
+blockquote, pre { 
+	border-left: 1px solid #999;
+	padding-left: 9pt;
+}
+blockquote, table, pre, ul, ol, dl, tr  { 
+	page-break-before:avoid;
+}
+thead { 
+	display: table-header-group;
+}
+img {
+	max-width: 100% !important;
+	page-break-inside: avoid !important;
+    page-break-after: avoid !important;
+}
+
+
+/* LINKS */
+
+a:link, a:visited {
+	color: #06c;
+	text-decoration: underline;
+}
+
+
+/* COMMENTS */
+#comments {
+	page-break-before: always;
+}
+ol.commentlist li {
+	list-style: none;
+	border-bottom: 2px solid #eee;
+	margin: 0 0 10pt 0;
+}
+ol.commentlist li div.comment-meta {
+	font-size: 6pt;
+}
+
+
+/* Sweeping Alterations */
+
+.not-home .site-header, 
+.site-header, 
+.site-nav, 
+#footer-widgets,
+#nav-below, 
+#comments, 
+.single-team .gallery, 
+.single-team h1.entry-title {
+	display: none !important; 
+}
+body,
+.entry-inner, 
+.entry-wrap, 
+.entry-title, 
+.entry-meta, 
+.entry-header, 
+.single .entry-inner,
+.page .entry-inner,
+.search .entry-wrap,
+.single-post .entry-inner,
+.single-case_study .entry-inner, 
+.single-case_study .entry-meta, 
+.single-team h2.entry-title {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.single .hentry,
+h1.entry-title, 
+.entry-meta, 
+.single .entry-header .entry-meta, 
+.single-post .entry-inner,
+.single-case_study .entry-inner, 
+.single-case_study .entry-header  {
+	margin: 0 auto !important;	
+}
+body {
+	width: 100% !important;
+	margin: 0 auto !important;	
+}
+
+
+/* CUSTOM */
+
+.page-id-13, 
+.page-id-77, 
+.single-team, 
+.post-type-archive-team, 
+.post-type-archive-case_study, 
+.search-results {
+	background-color: transparent !important;
+	background-image: none !important
+}
+.single .entry-header,
+.single .entry-inner, 
+.single-case_study .entry-inner {
+	height: .75in !important;
+	margin-top: .375in !important;
+}
+.gallery {
+	border-top: 1px solid #ddd;	
+	padding-top: .125in;
+	margin-bottom: .25in;	
+}
+.single-post .entry-left {
+    width: 64%;
+}
+.details {
+    width: 33%;
+}
+.details td {
+	border-top: 1px solid #ddd;	
+	padding: .03125in 0;
+	width: 2in;
+}
+.tdhead {
+	width: 1.25in !important;	
+}
+.details tbody, 
+.excerpt tbody {
+	margin: 5px !important;
+}
+.contact,
+.details, 
+.single-case_study .third ul {
+    font-size: 7pt !important;
+}
+.contact li {
+	width: 30% !important;
+	margin-bottom: 1em;
+}
+.single-team h2.entry-title, 
+.single-team .job-title {
+	text-align: center !important;	
+}
+.single-team .job-title {
+	width: 100% !important;
+	max-width: 100% !important;
+	border-bottom: 1px solid #ddd !important;
+	padding-bottom: .25in !important;
+	margin-bottom: .25in !important;
+}
+.single-team .entry-left {
+	margin-bottom: 0;
+}
+.single-team .attachment-large {
+	width: 45%;
+	float: right;
+	position: static;
+}
+.single-team .contact-box {
+	float: left;
+	width: 45%;
+}
+
+
+/* Exceptions for Prudential */
+
+.post-61 .entry-inner {
+	height: 0in !important;
+	margin: 0 !important;
+}
+.galleryid-61 {
+	height: 1.55in !important;
+	overflow: hidden !important;
+}
+.post-61 .details tr:first-child td {
+	border: 0 !important;
+}
+
+
+/* Footer */
+
+#colophon {
+	height: .5in;
+	margin: .5in 0 0 0 !important;	
+	width: 100% !important;
+}
+.logo-print {
+	float: left;
+	width: 1.5in;
+	height: auto;
+}
+.site-info {
+	float: right;
+	width: 3in !important;
+	font-size: 5pt !important;
+	text-align: right;
+	position: relative;
+	top: -.2825in;
+}
+
+
+
+#feedlyMiniIcon {
+	display: none !important;	
+}
+
